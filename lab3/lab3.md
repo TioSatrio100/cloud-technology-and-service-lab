@@ -91,6 +91,10 @@ jobs:
           fi
 ```
 # Pезультаты
+<img width="1366" height="768" alt="Screenshot from 2025-11-19 21-07-10" src="https://github.com/user-attachments/assets/8f03f135-1f71-4865-83d9-e7afe235021f" />
+
+<img width="1366" height="768" alt="Screenshot from 2025-11-19 21-17-55" src="https://github.com/user-attachments/assets/03c5a461-d943-4526-93ae-b94521ef4140" />
+
 
 
 # Выводы
