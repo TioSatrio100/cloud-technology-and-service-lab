@@ -1,0 +1,38 @@
+name: Bad CI/CD Pipeline
+
+on: [push, pull_request]
+
+jobs:
+  everything-in-one:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Hardcoded Secrets
+      run: |
+        echo "Database password: mysecret123"
+        docker login -u admin -p "password456"
+        
+    - name: Install Without Cache
+      run: |
+        sudo apt update
+        sudo apt install -y nodejs npm python3 pip
+        npm install
+        pip install -r requirements.txt
+        
+    - name: Run All Tests Sequential
+      run: |
+        npm test
+        npm run integration-test
+        npm run e2e-test
+        
+    - name: Deploy Direct to Prod
+      run: |
+        echo "Deploying directly to production!"
+        # scp ./dist/* user@prod-server:/var/www/html/
+        
+    - name: Dangerous Cleanup
+      run: |
+        rm -rf node_modules/
+        sudo apt autoremove -y

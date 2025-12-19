@@ -1,0 +1,38 @@
+name: Good CI Pipeline (Lab 3)
+
+on: [push]
+
+jobs:
+  common_build_test:
+    runs-on: ubuntu-latest
+    container: node:20.10.0-slim 
+    outputs:
+      status: ${{ steps.test_step.outcome }}
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install and Test (Reusable)
+        id: test_step
+        run: |
+          npm ci 
+          npm test
+
+  
+  deploy_dev:
+    needs: common_build_test 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to DEV (Secure)
+        env:
+          DEV_TOKEN: ${{ secrets.DEV_DEPLOY_TOKEN }} 
+        run: |
+          echo "run deployment to secure environment.."
+          if [[ "${{ needs.common_build_test.outputs.status }}" == "success" ]]; then
+            echo "Deployment to http://dev.example.com succes to simulate"
+            echo "used token (not allowed to see): $DEV_TOKEN"
+            sleep 2 
+          else
+            echo "Deployment aborted"
+            exit 1
+          fi
