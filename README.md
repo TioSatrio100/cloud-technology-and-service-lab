@@ -1,1 +1,1 @@
-# cloud-technology-and-service-lab
+# devops-technology-and-cloud-service-lab
