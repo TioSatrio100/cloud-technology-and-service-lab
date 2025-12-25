@@ -65,6 +65,20 @@
  
 ## 4. Результаты
 
+| IT Tower | Service Family | Service Type    | Service Sub Type           | Примеры Service Usage Type        |
+|----------|----------------|-----------------|----------------------------|-----------------------------------|
+|Compute   |Compute         |Virtual Machines |On-Demand Instances         |BoxUsage, Tax                      |
+|Compute   |Compute         |Savings Plans    |Compute Savings Plans       |All Upfront, No Upfron             |
+|Compute   |Compute         |Virtual Machines |Dedicated Hosts             |Dedicated Usage, Host Usage        |
+|Compute   |Compute         |Virtual Machines |GPU Instances               |GPU Usage                          |
+|Compute   |Compute         |Virtual Machines |Spot Instances              |Spot Usage                         |
+|Compute   |Compute         |Virtual Machines |Burstable Instances         |CPU Credits                        |
+|Compute   |Compute         |Virtual Machines |Purchase/Exchange/RI Resale |Purchase Fee, Exchange Usage       |
+|Networking|Content Delivery|CDN              |CloudFront                  |Requests, Data Transfer, SSL       |
+|AI & ML   |AI Services     |Enterprise Search|Kendra                      |Enterprise Edition, Document Scan  |
+|AI & ML   |AI Services     |Conversational AI|Lex                         |Requests, Tax                      |
+|Networking|DNS & Routing   |	DNS             |Route 53                    |DNS Queries, Health Checks, Geo DNS|
+
 ## 5. Классификация сервисов
 
 **5.1. Основная модель: IaaS (Infrastructure as a Service)**
