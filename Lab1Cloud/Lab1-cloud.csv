@@ -1,0 +1,42 @@
+IT Tower;Service Family;Service Type;Service Sub Type;Service Usage Type;Product Code;Usage Type; [lineItem/Operation];lineItem/LineItemDescription
+Compute;Compute;Virtual Machines;On-Demand Instances;BoxUsage;AmazonEC2;%BoxUsage%;;
+Compute;Compute;Virtual Machines;On-Demand Instances;Tax;AmazonEC2;;;Tax%
+Compute;Compute;Savings Plans;Compute Savings Plans;All Upfront;ComputeSavingsPlans;ComputeSP%AllUpfront;;
+Compute;Compute;Savings Plans;Compute Savings Plans;No Upfront;ComputeSavingsPlans;ComputeSP%NoUpfront;;
+Compute;Compute;Virtual Machines;Dedicated Hosts;Dedicated Usage Surcharge;AmazonEC2;%DedicatedUsage%;Surcharge;
+Compute;Compute;Virtual Machines;Dedicated Hosts;Dedicated Usage;AmazonEC2;%DedicatedUsage%;;
+Compute;Compute;Virtual Machines;Dedicated Hosts;Host Usage;AmazonEC2;%HostUsage%;;
+Compute;Compute;Virtual Machines;GPU Instances;GPU Usage;AmazonEC2;%EGpuUsage%;;
+Compute;Compute;Virtual Machines;Spot Instances;Spot Usage;AmazonEC2;%SpotUsage%;;
+Compute;Compute;Virtual Machines;Burstable Instances;CPU Credits;AmazonEC2;%CPUCredits%;;
+Compute;Compute;Reserved Instances;Purchase;Purchase Fee;AmazonEC2;%Purchase%;;Sign up charge for subscription:%
+Compute;Compute;Reserved Instances;Exchange;Exchange Usage;AmazonEC2;%ExchangeUsage;;
+Compute;Compute;Virtual Machines;Reserved Instances;Heavy Utilization;AmazonEC2;%HeavyUsage%;;
+Compute;Compute;Reserved Instances;RI Resale;RI Resale Service Fee;AmazonEC2RIResale2;%RIResaleServiceFee;;
+Network;Content Delivery;CDN;CloudFront;Tax;AmazonCloudFront;;;Tax%
+Network;Content Delivery;CDN;CloudFront;Requests Tier 1;AmazonCloudFront;%Requests-Tier1;;
+Network;Content Delivery;CDN;CloudFront;Requests Tier 1;AmazonCloudFront;%Requests-Tier1;;
+Network;Content Delivery;CDN;CloudFront;Requests Tier 2 HTTPS;AmazonCloudFront;%Requests-Tier2-HTTPS;;
+Network;Content Delivery;CDN;CloudFront;Requests HTTP;AmazonCloudFront;%Requests-HTTP%;;
+Network;Content Delivery;CDN;CloudFront;Invalidation;AmazonCloudFront;%Invalidations;;
+Network;Content Delivery;CDN;CloudFront;FMS Out Bytes;AmazonCloudFront;%FMS-Out-Bytes;;
+Network;Content Delivery;CDN;CloudFront;Data Transfer;AmazonCloudFront;%DataTransfer%;;
+Network;Content Delivery;CDN;CloudFront;SSL Certificate Custom;AmazonCloudFront;SSL-Cert-Custom;;
+AI & ML;AI Services;Enterprise Search;Kendra;Enterprise Edition;AmazonKendra;%KendraEnterpriseEdition;;
+AI & ML;AI Services;Enterprise Search;Kendra;Documents Scanned;AmazonKendra;%DocumentsScanned;;
+AI & ML;AI Services;Enterprise Search;Kendra;Connector Sync;AmazonKendra;%ConnectorSync;;
+AI & ML;AI Services;Conversational AI;Lex;Tax;AmazonLex;;;Tax%
+AI & ML;AI Services;Conversational AI;Lex;Request;AmazonLex;%Req%;;
+Network;DNS & Routing;DNS;Route53;Tax;AmazonRoute53;;;Tax%
+Network;DNS & Routing;DNS;Route53;Health Check Option AWS;AmazonRoute53;%Health-Check-Option-AWS;;
+Network;DNS & Routing;DNS;Route53;Health Check AWS;AmazonRoute53;%Health-Check-AWS;;
+Network;DNS & Routing;DNS;Route53;DNS Queries;AmazonRoute53;%DNS-Queries;;
+Network;DNS & Routing;DNS;Route53;LBR Queries;AmazonRoute53;%LBR-Queries;;
+Network;DNS & Routing;DNS;Route53;Intra AWS DNS Queries;AmazonRoute53;%Intra-AWS-DNS-Queries;;
+Network;DNS & Routing;DNS;Route53;Hosted Zone;AmazonRoute53;%HostedZone;;
+Network;DNS & Routing;DNS;Route53;Health Check Non AWS;AmazonRoute53;%Health-Check-Non-AWS;;
+Network;DNS & Routing;DNS;Route53;Traffic Flow Policy Records;AmazonRoute53;%Traffic-Flow-Policy-Records;;
+Network;DNS & Routing;DNS;Route53;Health Check Latency;AmazonRoute53;%Health-Check%;%Latency%;
+Network;DNS & Routing;DNS;Route53;Health Check Option Non AWS;AmazonRoute53;%Health-Check-Option-Non-AWS;;
+Network;DNS & Routing;DNS;Route53;Geo Queries;AmazonRoute53;%Geo-Queries%;;
+Network;DNS & Routing;DNS;Route53;Resolver Network Interface;AmazonRoute53;%ResolverNetworkInterface;;
